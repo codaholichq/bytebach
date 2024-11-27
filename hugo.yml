@@ -1,0 +1,117 @@
+baseURL: https://bytebach.com/
+languageCode: en-us
+title: ByteBach
+pagination:
+  pagerSize: 5
+theme: ["PaperMod"]
+rssLimit: 25
+
+permalinks:
+  blog: /:slug/
+
+googleAnalytics: G-DF0R2P64WT
+enableRobotsTXT: true
+enableEmoji: true
+sitemap:
+  changefreq: daily
+  priority: 0.5
+
+
+params:
+  env: production
+  title: ByteBach
+  author: Emmy Steven
+  images: ["img/feature-image.webp"]
+  description: ByteBach is a community created for those who want to 10x tech writers
+  keywords: [Consulting services, Digital products, Growth strategies, Expert insights, Business consulting]
+  SidebarRecentLimit: 5
+  mainSections: ["blog"]
+
+  showBreadCrumbs: false
+  showReadingTime: true
+  showShareButtons: true
+  showPostNavLinks: true
+  showFullTextinRSS: true
+  showCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  math: true
+  social: true
+
+  privacypolicy: /pages/privacy
+
+  label:
+    text: "ByteBach"
+    icon: "img/logo.webp"
+    iconHeight: 35
+
+  homeInfoParams:
+    Title: "Welcome! \U0001F44B"
+    Content: "At ByteBach, we specialize in providing expert consulting services and
+    innovative digital products to help businesses and creators succeed in the digital age.
+    Our services are designed to empower you with tailored strategies, actionable insights,
+    and cutting-edge tools that drive growth and efficiency.
+    Whether you need guidance to optimize operations or digital solutions to streamline your workflow,
+    ByteBach is here to support your journey to success."
+  
+  socialIcons:
+    - name: "rss"
+      url: "https://bytebach.com/index.xml"
+    - name: X
+      url: https://x.com/bytebach
+    - name: linkedin
+      url: https://www.linkedin.com/company/bytebach
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: false
+    linkFullImages: true
+  
+  editPost:
+    URL: "https://github.com/codaholichq/bytebach/edit/main/content"
+    Text: " Suggest edit"
+    appendFilePath: true
+  
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: blog
+      weight: 1
+    - identifier: contact
+      name: Contact
+      url: contact
+      weight: 2
+    - identifier: about
+      name: About
+      url: about
+      weight: 3
+
+disableKinds:
+  - taxonomy
+
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: monokai
+    tabWidth: 4
+  goldmark:
+    renderer:
+      hardWraps: true
+      unsafe: true
