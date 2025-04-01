@@ -9,7 +9,7 @@ rssLimit: 25
 permalinks:
   blog: /:slug/
 
-googleAnalytics: G-DF0R2P64WT
+googleAnalytics: 
 enableRobotsTXT: true
 enableEmoji: true
 sitemap:
